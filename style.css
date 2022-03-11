@@ -1,0 +1,150 @@
+body {
+
+	font-family: 'Open Sans', sans-serif;
+	background: #CAEBF2;
+}
+
+.container {
+	max-width: 840px ;
+	margin: 0 auto ;
+}
+
+.container > div {
+
+	margin: 20px auto;
+}
+
+.profilePic {
+		border-radius: 50%;
+		width: 150px;
+		height: 150px;
+		box-shadow: 0 4px 6px 0 rgb(34, 60, 80, 0.32);
+		transition: all ease-in-out .2s;
+	}
+
+		.profilePic:hover {
+			box-shadow: 0 8px 12px 0 rgb(34, 60, 80, 0.32) ;
+	}
+
+	.pImage {
+
+		border-radius: 5px;
+		box-shadow: 0 4px 6px 0 rgb(34, 60, 80, 0.16) ;
+		transition: all ease-in-out .2s;
+	}
+
+	.pImage:hover {
+	filter: brightness(0.75);
+	box-shadow: 0 8px 12px 0 rgb(34, 60, 80, 0.16);
+
+	}
+
+	.pImage-wrapper:hover, .h4 {
+		visibility: visible;
+	}
+
+	.pImage-wrapper, .h4 {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50% -50%) ;
+		color: white;
+		visibility: hidden;
+		transition: all ease-in-out .2s;
+	}
+.intro {
+	text-align: center;
+	}
+
+.aboutGrid {
+	display: grid;
+	grid-template-columns: 50% 50%;
+
+}
+
+
+.iAm, .iEnjoy {
+	text-align: center;
+	
+}
+
+.aboutList {
+	text-align: center;
+	list-style: none;
+	padding: 0;
+}
+
+@media (max-width: 480px) {
+	.aboutGrid {
+		grid-template-columns: 100%;}
+	}
+
+	.projectsHeading {
+	text-align: center;
+}
+
+	.projectsGrid {
+	display: grid;
+	grid-template-columns: 50% 50%;
+	grid-template-rows: repeat(2, 1fr);
+	background-color:  ;
+	box-shadow:  ;
+	}
+
+
+
+	.pImage {
+		justify-self: center;
+		padding: 5%;
+		width: 95%;
+		height: 95%;
+		object-fit: cover ;
+
+	}
+
+	@media (max-width: 650px) { 
+		.projectsGrid {
+		grid-template-columns: 100%;}
+	}
+
+	.linksContacts {
+		display: grid;
+		grid-template-columns: 30% 70%;
+	}
+
+	.links { 
+		justify-self: center;
+	 }
+
+	 .linksList {
+	 	list-style: none;
+	 	padding: 0;
+	}
+
+	@media (max-width: 650px) {
+		.linksContacts {
+			grid-template-columns: 100%;
+	}
+
+	form input, textarea {
+
+		padding: 5px;
+		border-radius: 5px;
+		width: 240px;
+	}
+
+	form input [type="submit"] {
+	width: 200px;
+	}
+
+	.submit-button-wrapper {
+
+		margin: 20px 0;
+	}
+
+	hr {
+
+		border: 0;
+		height: 1px;
+		background-image: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,.75), rgba(0,0,0,0));
+	}
